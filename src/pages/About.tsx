@@ -2,6 +2,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users2, Target, BarChart, Award } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const stats = [
@@ -39,17 +40,43 @@ const About = () => {
       <Header />
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="bg-primary-light py-20">
+        <section className="relative overflow-hidden bg-white py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Transforming Careers Through Expert Mentorship
-              </h1>
-              <p className="text-xl text-gray-600">
-                Vedaa Verse is dedicated to bridging the gap between education and
-                employment through comprehensive placement preparation.
-              </p>
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Column - Content */}
+              <div className="max-w-2xl">
+                <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight mb-6">
+                  We're on a mission to transform the{" "}
+                  <span className="text-primary">Placement Preparation</span>
+                </h1>
+                <p className="text-lg text-gray-600 mb-8">
+                  We are on a mission to help students crack their HR interviews with
+                  confidence. Our Placement Ready Program is designed to give you
+                  the edge in campus placements, providing expert guidance, real-world
+                  mock interviews, and in-depth HR question analysis.
+                </p>
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
+                  REGISTER NOW
+                </Button>
+              </div>
+
+              {/* Right Column - Image */}
+              <div className="relative">
+                <div className="rounded-[40px] overflow-hidden border-[3px] border-pink-500">
+                  <img
+                    src="/lovable-uploads/f5b45dc0-41d3-44ac-a718-c18a86b03def.png"
+                    alt="Placement Success"
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
             </div>
+          </div>
+
+          {/* Background Elements */}
+          <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-purple-100 rounded-full -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-50 rounded-full translate-x-1/2 translate-y-1/2" />
           </div>
         </section>
 
