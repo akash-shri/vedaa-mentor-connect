@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { CheckCircle, Clock, BookOpen, Users, Send } from "lucide-react";
+import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -76,56 +76,63 @@ const ExploreProgram = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-white pt-16">
+        <section className="relative overflow-hidden bg-white pt-24 pb-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center pt-12 pb-20">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Column */}
-              <div className="max-w-2xl">
-                <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                  Your One-Stop
-                  <br />
-                  Solution for
-                  <br />
-                  <span className="text-primary">Placement Preparation</span>
-                </h1>
-                <p className="text-xl mb-8">Explore the Ease of Placement</p>
-                <div className="flex flex-wrap gap-4 mb-8">
-                  <Button className="bg-[#FF4D8D] hover:bg-[#FF4D8D]/90 text-white px-8 py-6 text-lg">
-                    Get Started
-                  </Button>
-                  <Button variant="outline" className="px-8 py-6 text-lg border-2">
-                    Advisors
-                  </Button>
-                </div>
-                <div className="relative max-w-md">
-                  <Input 
-                    type="text" 
-                    placeholder="Enter your details" 
-                    className="w-full pl-6 pr-16 py-6 text-lg rounded-full border-2"
-                  />
-                  <Button 
-                    className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full p-3 bg-primary hover:bg-primary/90"
-                  >
-                    <Send className="w-5 h-5" />
-                  </Button>
-                </div>
-              </div>
-
-              {/* Right Column - Phone Image */}
-              <div className="relative">
+              <div>
                 <img
-                  src="/lovable-uploads/2f927024-e982-432f-aee1-5cbccbd7e85a.png"
-                  alt="Vedaa Verse App Interface"
+                  src="/lovable-uploads/2f092a56-3e5a-4cc7-af00-96252012fd65.png"
+                  alt="Professional Ready"
                   className="w-full max-w-md mx-auto"
                 />
+              </div>
+
+              {/* Right Column */}
+              <div className="max-w-xl">
+                <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                  Join Our PRP
+                  <br />
+                  <span className="text-primary">Placement Ready Program</span>
+                </h1>
+
+                {/* Search Bar */}
+                <div className="relative mb-8">
+                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <Search className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <Input
+                    type="text"
+                    placeholder="Search All Classes"
+                    className="w-full pl-12 pr-4 py-6 text-lg rounded-full border-2"
+                  />
+                </div>
+
+                {/* Action Buttons */}
+                <div className="grid grid-cols-2 gap-4">
+                  <Button
+                    variant="outline"
+                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-white shadow-md hover:shadow-lg border-2 border-primary"
+                  >
+                    <User className="w-5 h-5" />
+                    Get Started
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-white shadow-md hover:shadow-lg border-2 border-[#FF4D8D]"
+                  >
+                    <MessageSquare className="w-5 h-5" />
+                    Testimonials
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Background Elements */}
-          <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-100 rounded-full translate-x-1/2 translate-y-1/2" />
+          <div className="absolute inset-0 -z-10">
+            <div className="absolute top-0 left-0 w-96 h-96 bg-purple-100 rounded-full -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-50 rounded-full translate-x-1/2 translate-y-1/2" />
           </div>
         </section>
 
