@@ -46,28 +46,46 @@ const About = () => {
               {/* Left Column - Content */}
               <div className="max-w-2xl">
                 <h1 className="text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight mb-6">
-                  We're on a mission to transform the{" "}
-                  <span className="text-primary">Placement Preparation</span>
+                  We're on a mission to transform{" "}
+                  <span className="text-primary">Education</span>
                 </h1>
                 <p className="text-lg text-gray-600 mb-8">
-                  We are on a mission to help students crack their HR interviews with
-                  confidence. Our Placement Ready Program is designed to give you
-                  the edge in campus placements, providing expert guidance, real-world
-                  mock interviews, and in-depth HR question analysis.
+                  At Vedaa Verse, we believe in transforming education through 
+                  innovative learning approaches. Our goal is to bridge the gap 
+                  between academic knowledge and industry requirements, ensuring 
+                  every student is prepared for real-world success.
                 </p>
                 <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full">
-                  REGISTER NOW
+                  Learn More
                 </Button>
               </div>
 
-              {/* Right Column - Image */}
-              <div className="relative">
-                <div className="rounded-[40px] overflow-hidden border-[3px] border-pink-500">
-                  <img
-                    src="/lovable-uploads/f5b45dc0-41d3-44ac-a718-c18a86b03def.png"
-                    alt="Placement Success"
-                    className="w-full h-auto"
-                  />
+              {/* Right Column - Content */}
+              <div className="space-y-8">
+                <div className="bg-white rounded-xl shadow-lg p-8">
+                  <h3 className="text-2xl font-bold mb-4">Our Approach</h3>
+                  <p className="text-gray-600">
+                    We focus on practical learning, industry insights, and 
+                    personalized mentoring to ensure every student reaches their 
+                    full potential.
+                  </p>
+                </div>
+                <div className="bg-primary/5 rounded-xl p-8">
+                  <h3 className="text-2xl font-bold mb-4">Why Choose Us?</h3>
+                  <ul className="space-y-4 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <Target className="w-6 h-6 text-primary mt-1" />
+                      <span>Industry-aligned curriculum</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Users2 className="w-6 h-6 text-primary mt-1" />
+                      <span>Expert mentorship program</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Award className="w-6 h-6 text-primary mt-1" />
+                      <span>Proven success track record</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -100,40 +118,54 @@ const About = () => {
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="rounded-[32px] overflow-hidden border-2 border-gray-200">
-                  <img
-                    src="/lovable-uploads/9456e6e1-64e1-4f27-b218-6d0ace0921cb.png"
-                    alt="Team Meeting"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
               <div className="max-w-xl">
-                <h2 className="text-4xl font-bold text-pink-500 mb-6">Our Story</h2>
+                <h2 className="text-4xl font-bold text-primary mb-6">Our Story</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  We spent years working with edtech companies, watching students invest
-                  huge amounts in courses, hoping for an internship or job as promised.
-                  But the harsh reality? When the courses ended, 99% were left
-                  struggling, jobless, and frustrated.
-                </p>
-                <p className="text-xl font-semibold text-gray-800 mb-12">
-                  Why? Because technical skills alone aren't enough.
+                  We began with a simple observation: despite quality technical education,
+                  many students struggle to land their dream jobs. The missing piece?
+                  The practical skills and confidence needed to succeed in interviews
+                  and workplace situations.
                 </p>
                 <div className="grid gap-8">
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <h3 className="text-2xl font-bold mb-4">Mission</h3>
                     <p className="text-gray-600">
-                      Empowering students with real-world skills, industry exposure,
-                      and career strategies to secure meaningful internships and jobs.
+                      To empower students with the skills, confidence, and 
+                      opportunities they need to succeed in their careers through 
+                      innovative education and mentorship.
                     </p>
                   </div>
                   <div className="bg-white p-6 rounded-xl shadow-sm">
                     <h3 className="text-2xl font-bold mb-4">Vision</h3>
                     <p className="text-gray-600">
-                      To create a verse where every student, regardless of background,
-                      has an equal opportunity to succeed in the job market.
+                      To create an educational ecosystem where every student has 
+                      the tools and support they need to achieve their career goals.
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-8">
+                <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <h3 className="text-2xl font-bold mb-4">Our Impact</h3>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-primary/10 rounded-lg">
+                        <Users2 className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold">Student Success</h4>
+                        <p className="text-gray-600">80% placement rate</p>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-primary/10 rounded-lg">
+                        <Target className="w-6 h-6 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold">Industry Network</h4>
+                        <p className="text-gray-600">100+ partner companies</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
