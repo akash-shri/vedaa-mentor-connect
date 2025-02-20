@@ -96,36 +96,66 @@ const About = () => {
           </div>
         </section>
 
-        {/* Values Section */}
+        {/* Our Story Section */}
         <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative">
+                <div className="rounded-[32px] overflow-hidden border-2 border-gray-200">
+                  <img
+                    src="/lovable-uploads/9456e6e1-64e1-4f27-b218-6d0ace0921cb.png"
+                    alt="Team Meeting"
+                    className="w-full h-auto"
+                  />
+                </div>
+              </div>
+              <div className="max-w-xl">
+                <h2 className="text-4xl font-bold text-pink-500 mb-6">Our Story</h2>
+                <p className="text-lg text-gray-600 mb-8">
+                  We spent years working with edtech companies, watching students invest
+                  huge amounts in courses, hoping for an internship or job as promised.
+                  But the harsh reality? When the courses ended, 99% were left
+                  struggling, jobless, and frustrated.
+                </p>
+                <p className="text-xl font-semibold text-gray-800 mb-12">
+                  Why? Because technical skills alone aren't enough.
+                </p>
+                <div className="grid gap-8">
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 className="text-2xl font-bold mb-4">Mission</h3>
+                    <p className="text-gray-600">
+                      Empowering students with real-world skills, industry exposure,
+                      and career strategies to secure meaningful internships and jobs.
+                    </p>
+                  </div>
+                  <div className="bg-white p-6 rounded-xl shadow-sm">
+                    <h3 className="text-2xl font-bold mb-4">Vision</h3>
+                    <p className="text-gray-600">
+                      To create a verse where every student, regardless of background,
+                      has an equal opportunity to succeed in the job market.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values Section */}
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
                 >
                   <value.icon className="w-12 h-12 text-primary mb-4" />
                   <h3 className="text-xl font-semibold mb-2">{value.title}</h3>
                   <p className="text-gray-600">{value.description}</p>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Mission Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600">
-                To empower students from tier 3 & 4 cities with the skills,
-                confidence, and opportunities they need to succeed in their careers.
-                We believe in making quality placement preparation accessible and
-                affordable for everyone.
-              </p>
             </div>
           </div>
         </section>
