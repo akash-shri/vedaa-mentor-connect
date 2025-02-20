@@ -19,8 +19,15 @@ const Header = () => {
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-primary">
-              Vedaa Verse
+            <Link to="/" className="flex items-center space-x-2">
+              <img
+                src="/lovable-uploads/2b56ffe5-31b7-4b65-8d65-a9c76b8234f8.png"
+                alt="Vedaa Verse Logo"
+                className="h-8 w-auto"
+              />
+              <span className="text-2xl font-bold text-primary">
+                Vedaa Verse
+              </span>
             </Link>
           </div>
 
