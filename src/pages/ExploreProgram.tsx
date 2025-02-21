@@ -1,3 +1,4 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send, GraduationCap, Book, Target } from "lucide-react";
@@ -79,8 +80,8 @@ const ExploreProgram = () => {
         <section className="relative overflow-hidden pt-24 pb-16">
           <div className="container mx-auto px-4">
             {/* Hero Content */}
-            <div className="max-w-xl mx-auto">
-              <div className="mb-6">
+            <div className="w-full">
+              <div className="mb-6 max-w-2xl">
                 <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
                   Professional Ready Program
                 </span>
@@ -93,7 +94,7 @@ const ExploreProgram = () => {
               </div>
 
               {/* Search Bar */}
-              <div className="relative mb-8">
+              <div className="relative mb-8 max-w-2xl">
                 <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                   <Search className="h-5 w-5 text-gray-400" />
                 </div>
@@ -105,7 +106,7 @@ const ExploreProgram = () => {
               </div>
 
               {/* Stats Section */}
-              <div className="grid grid-cols-3 gap-6 mb-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
                 <div className="text-center">
                   <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
                     <GraduationCap className="w-6 h-6 text-primary" />
@@ -130,7 +131,7 @@ const ExploreProgram = () => {
               </div>
 
               {/* Action Buttons */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 <Button
                   className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
                 >
@@ -206,3 +207,4 @@ const ExploreProgram = () => {
 };
 
 export default ExploreProgram;
+
