@@ -149,23 +149,24 @@ const ExploreProgram = () => {
                 </div>
               </div>
 
-              {/* Right Column - Decorative Elements */}
+              {/* Right Column - Clean Design */}
               <div className="relative hidden md:block">
-                <div className="relative z-10 bg-gradient-to-br from-primary/5 to-[#FF4D8D]/5 rounded-2xl shadow-xl p-6 md:p-8 min-h-[400px] flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10">
-                      <GraduationCap className="w-10 h-10 text-primary" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Start Learning Today</h3>
-                    <p className="text-gray-600">Join our community of successful graduates</p>
+                <div className="relative z-10 flex flex-col items-center justify-center min-h-[400px]">
+                  <div className="flex items-center justify-center w-24 h-24 mb-6 rounded-full bg-primary/10">
+                    <GraduationCap className="w-12 h-12 text-primary" />
                   </div>
-                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-full px-6 py-3 shadow-lg">
-                    <p className="text-sm font-medium text-gray-900">Join 500+ students already learning</p>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-4 text-center">Start Your Journey Today</h3>
+                  <p className="text-xl text-gray-600 text-center max-w-sm">Join our community of successful graduates and accelerate your career growth</p>
+                  <div className="mt-8">
+                    <span className="inline-flex items-center gap-2 text-primary font-medium">
+                      <Users className="w-5 h-5" />
+                      500+ Students Already Enrolled
+                    </span>
                   </div>
                 </div>
-                {/* Decorative Elements */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200 rounded-full opacity-50 blur-2xl"></div>
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-pink-200 rounded-full opacity-50 blur-2xl"></div>
+                {/* Decorative Blobs */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-purple-200 rounded-full opacity-30 blur-3xl"></div>
+                <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-200 rounded-full opacity-30 blur-3xl"></div>
               </div>
             </div>
           </div>
