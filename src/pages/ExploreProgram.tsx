@@ -1,6 +1,7 @@
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send } from "lucide-react";
+import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send, GraduationCap, Book, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -72,29 +73,26 @@ const ExploreProgram = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-white pt-24 pb-16">
+        <section className="relative overflow-hidden pt-24 pb-16">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Column */}
-              <div>
-                <img
-                  src="/lovable-uploads/2f092a56-3e5a-4cc7-af00-96252012fd65.png"
-                  alt="Professional Ready"
-                  className="w-full max-w-md mx-auto"
-                />
-              </div>
-
-              {/* Right Column */}
               <div className="max-w-xl">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Join Our PRP
-                  <br />
-                  <span className="text-primary">Placement Ready Program</span>
-                </h1>
+                <div className="mb-6">
+                  <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
+                    Professional Ready Program
+                  </span>
+                  <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-[#FF4D8D] text-transparent bg-clip-text">
+                    Placement Ready Program
+                  </h1>
+                  <p className="text-gray-600 text-lg mb-6">
+                    Accelerate your career with our comprehensive placement preparation program
+                  </p>
+                </div>
 
                 {/* Search Bar */}
                 <div className="relative mb-8">
@@ -103,36 +101,71 @@ const ExploreProgram = () => {
                   </div>
                   <Input
                     type="text"
-                    placeholder="Search All Classes"
-                    className="w-full pl-12 pr-4 py-6 text-lg rounded-full border-2"
+                    placeholder="Search for courses, workshops, and more..."
+                    className="w-full pl-12 pr-4 py-6 text-lg rounded-full border-2 focus:border-primary focus:ring-primary"
                   />
+                </div>
+
+                {/* Stats Section */}
+                <div className="grid grid-cols-3 gap-6 mb-8">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
+                      <GraduationCap className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">500+</h3>
+                    <p className="text-sm text-gray-600">Graduates</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-[#FF4D8D]/10">
+                      <Book className="w-6 h-6 text-[#FF4D8D]" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">50+</h3>
+                    <p className="text-sm text-gray-600">Courses</p>
+                  </div>
+                  <div className="text-center">
+                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-green-100">
+                      <Target className="w-6 h-6 text-green-600" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">95%</h3>
+                    <p className="text-sm text-gray-600">Success Rate</p>
+                  </div>
                 </div>
 
                 {/* Action Buttons */}
                 <div className="grid grid-cols-2 gap-4">
                   <Button
-                    variant="outline"
-                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-white shadow-md hover:shadow-lg border-2 border-primary"
+                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
                   >
                     <User className="w-5 h-5" />
                     Get Started
                   </Button>
                   <Button
                     variant="outline"
-                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-white shadow-md hover:shadow-lg border-2 border-[#FF4D8D]"
+                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl border-2 border-[#FF4D8D] text-[#FF4D8D] hover:bg-[#FF4D8D]/10"
                   >
                     <MessageSquare className="w-5 h-5" />
                     Testimonials
                   </Button>
                 </div>
               </div>
-            </div>
-          </div>
 
-          {/* Background Elements */}
-          <div className="absolute inset-0 -z-10">
-            <div className="absolute top-0 left-0 w-96 h-96 bg-purple-100 rounded-full -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-50 rounded-full translate-x-1/2 translate-y-1/2" />
+              {/* Right Column - Illustration */}
+              <div className="relative">
+                <div className="relative z-10 bg-white rounded-2xl shadow-xl p-6 md:p-8">
+                  <img
+                    src="/lovable-uploads/f5b45dc0-41d3-44ac-a718-c18a86b03def.png"
+                    alt="Professional Training"
+                    className="w-full h-auto rounded-xl"
+                  />
+                  <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-full px-6 py-3 shadow-lg">
+                    <p className="text-sm font-medium text-gray-900">Join 500+ students already learning</p>
+                  </div>
+                </div>
+                {/* Decorative Elements */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-purple-200 rounded-full opacity-50 blur-2xl"></div>
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-pink-200 rounded-full opacity-50 blur-2xl"></div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -193,3 +226,4 @@ const ExploreProgram = () => {
 };
 
 export default ExploreProgram;
+
