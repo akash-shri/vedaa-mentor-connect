@@ -149,14 +149,16 @@ const ExploreProgram = () => {
                 </div>
               </div>
 
-              {/* Right Column - Illustration */}
-              <div className="relative">
-                <div className="relative z-10 bg-white rounded-2xl shadow-xl p-6 md:p-8">
-                  <img
-                    src="/lovable-uploads/f5b45dc0-41d3-44ac-a718-c18a86b03def.png"
-                    alt="Professional Training"
-                    className="w-full h-auto rounded-xl"
-                  />
+              {/* Right Column - Decorative Elements */}
+              <div className="relative hidden md:block">
+                <div className="relative z-10 bg-gradient-to-br from-primary/5 to-[#FF4D8D]/5 rounded-2xl shadow-xl p-6 md:p-8 min-h-[400px] flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 rounded-full bg-primary/10">
+                      <GraduationCap className="w-10 h-10 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">Start Learning Today</h3>
+                    <p className="text-gray-600">Join our community of successful graduates</p>
+                  </div>
                   <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white rounded-full px-6 py-3 shadow-lg">
                     <p className="text-sm font-medium text-gray-900">Join 500+ students already learning</p>
                   </div>
