@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send, GraduationCap, Book, Target } from "lucide-react";
@@ -79,94 +78,72 @@ const ExploreProgram = () => {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              {/* Left Column */}
-              <div className="max-w-xl">
-                <div className="mb-6">
-                  <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-                    Professional Ready Program
-                  </span>
-                  <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-[#FF4D8D] text-transparent bg-clip-text">
-                    Placement Ready Program
-                  </h1>
-                  <p className="text-gray-600 text-lg mb-6">
-                    Accelerate your career with our comprehensive placement preparation program
-                  </p>
-                </div>
+            {/* Hero Content */}
+            <div className="max-w-xl mx-auto">
+              <div className="mb-6">
+                <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
+                  Professional Ready Program
+                </span>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-[#FF4D8D] text-transparent bg-clip-text">
+                  Placement Ready Program
+                </h1>
+                <p className="text-gray-600 text-lg mb-6">
+                  Accelerate your career with our comprehensive placement preparation program
+                </p>
+              </div>
 
-                {/* Search Bar */}
-                <div className="relative mb-8">
-                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                    <Search className="h-5 w-5 text-gray-400" />
-                  </div>
-                  <Input
-                    type="text"
-                    placeholder="Search for courses, workshops, and more..."
-                    className="w-full pl-12 pr-4 py-6 text-lg rounded-full border-2 focus:border-primary focus:ring-primary"
-                  />
+              {/* Search Bar */}
+              <div className="relative mb-8">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Search className="h-5 w-5 text-gray-400" />
                 </div>
+                <Input
+                  type="text"
+                  placeholder="Search for courses, workshops, and more..."
+                  className="w-full pl-12 pr-4 py-6 text-lg rounded-full border-2 focus:border-primary focus:ring-primary"
+                />
+              </div>
 
-                {/* Stats Section */}
-                <div className="grid grid-cols-3 gap-6 mb-8">
-                  <div className="text-center">
-                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
-                      <GraduationCap className="w-6 h-6 text-primary" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">500+</h3>
-                    <p className="text-sm text-gray-600">Graduates</p>
+              {/* Stats Section */}
+              <div className="grid grid-cols-3 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
+                    <GraduationCap className="w-6 h-6 text-primary" />
                   </div>
-                  <div className="text-center">
-                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-[#FF4D8D]/10">
-                      <Book className="w-6 h-6 text-[#FF4D8D]" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">50+</h3>
-                    <p className="text-sm text-gray-600">Courses</p>
-                  </div>
-                  <div className="text-center">
-                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-green-100">
-                      <Target className="w-6 h-6 text-green-600" />
-                    </div>
-                    <h3 className="text-2xl font-bold text-gray-900">95%</h3>
-                    <p className="text-sm text-gray-600">Success Rate</p>
-                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">500+</h3>
+                  <p className="text-sm text-gray-600">Graduates</p>
                 </div>
-
-                {/* Action Buttons */}
-                <div className="grid grid-cols-2 gap-4">
-                  <Button
-                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
-                  >
-                    <User className="w-5 h-5" />
-                    Get Started
-                  </Button>
-                  <Button
-                    variant="outline"
-                    className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl border-2 border-[#FF4D8D] text-[#FF4D8D] hover:bg-[#FF4D8D]/10"
-                  >
-                    <MessageSquare className="w-5 h-5" />
-                    Testimonials
-                  </Button>
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-[#FF4D8D]/10">
+                    <Book className="w-6 h-6 text-[#FF4D8D]" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">50+</h3>
+                  <p className="text-sm text-gray-600">Courses</p>
+                </div>
+                <div className="text-center">
+                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-green-100">
+                    <Target className="w-6 h-6 text-green-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900">95%</h3>
+                  <p className="text-sm text-gray-600">Success Rate</p>
                 </div>
               </div>
 
-              {/* Right Column - Clean Design */}
-              <div className="relative hidden md:block">
-                <div className="relative z-10 flex flex-col items-center justify-center min-h-[400px]">
-                  <div className="flex items-center justify-center w-24 h-24 mb-6 rounded-full bg-primary/10">
-                    <GraduationCap className="w-12 h-12 text-primary" />
-                  </div>
-                  <h3 className="text-3xl font-bold text-gray-900 mb-4 text-center">Start Your Journey Today</h3>
-                  <p className="text-xl text-gray-600 text-center max-w-sm">Join our community of successful graduates and accelerate your career growth</p>
-                  <div className="mt-8">
-                    <span className="inline-flex items-center gap-2 text-primary font-medium">
-                      <Users className="w-5 h-5" />
-                      500+ Students Already Enrolled
-                    </span>
-                  </div>
-                </div>
-                {/* Decorative Blobs */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-purple-200 rounded-full opacity-30 blur-3xl"></div>
-                <div className="absolute bottom-0 left-0 w-64 h-64 bg-pink-200 rounded-full opacity-30 blur-3xl"></div>
+              {/* Action Buttons */}
+              <div className="grid grid-cols-2 gap-4">
+                <Button
+                  className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
+                >
+                  <User className="w-5 h-5" />
+                  Get Started
+                </Button>
+                <Button
+                  variant="outline"
+                  className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl border-2 border-[#FF4D8D] text-[#FF4D8D] hover:bg-[#FF4D8D]/10"
+                >
+                  <MessageSquare className="w-5 h-5" />
+                  Testimonials
+                </Button>
               </div>
             </div>
           </div>
@@ -229,4 +206,3 @@ const ExploreProgram = () => {
 };
 
 export default ExploreProgram;
-
