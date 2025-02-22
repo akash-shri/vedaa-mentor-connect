@@ -7,15 +7,16 @@ const Hero = () => {
   return (
     <div className="pt-24 pb-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Column */}
-          <div className="max-w-2xl">
+        {/* Hero Content */}
+        <div className="w-full">
+          <div className="mb-6 max-w-2xl">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">
               Your One-Stop <br />
               Solution for <br />
               <span className="text-primary">Placement Preparation</span>
             </h1>
             <p className="text-xl mb-8">Explore the Ease of Placement</p>
+            
             <div className="flex flex-wrap gap-4 mb-8">
               <Button className="bg-[#FF4D8D] hover:bg-[#FF4D8D]/90 text-white px-8 py-6 text-lg">
                 Get Started
@@ -24,7 +25,8 @@ const Hero = () => {
                 Advisors
               </Button>
             </div>
-            <div className="relative max-w-md">
+            
+            <div className="relative max-w-2xl">
               <Input 
                 type="text" 
                 placeholder="Enter your details" 
@@ -36,15 +38,6 @@ const Hero = () => {
                 <Send className="w-5 h-5" />
               </Button>
             </div>
-          </div>
-
-          {/* Right Column - Phone Image */}
-          <div className="relative">
-            <img
-              src="/lovable-uploads/2f927024-e982-432f-aee1-5cbccbd7e85a.png"
-              alt="Vedaa Verse App Interface"
-              className="w-full max-w-md mx-auto"
-            />
           </div>
         </div>
       </div>
