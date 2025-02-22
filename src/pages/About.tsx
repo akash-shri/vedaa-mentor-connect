@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Users2, Target, Trophy, Book } from "lucide-react";
+import { Users2, Target, Trophy, Book, Rocket, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
@@ -105,20 +105,47 @@ const About = () => {
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="py-20">
+        {/* Our Story Section */}
+        <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                To empower students with the knowledge, skills, and confidence
-                needed to achieve their career goals. We believe in creating an
-                ecosystem where talent meets opportunity, and dreams transform into
-                reality.
-              </p>
-              <Button className="bg-primary hover:bg-primary/90 text-white">
-                Learn More About Us
-              </Button>
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl font-bold mb-4">Our Story</h2>
+                <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
+                <p className="text-lg text-gray-600">
+                  Founded with a vision to bridge the gap between education and industry requirements, 
+                  Vedaa Verse has grown from a small initiative to a comprehensive career development platform. 
+                  Our journey began with a simple goal: to empower students with the right skills and mindset 
+                  needed for professional success.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-12 mt-16">
+                <div className="bg-primary-light p-8 rounded-lg shadow-sm">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Rocket className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
+                  <p className="text-gray-600">
+                    To empower students with the knowledge, skills, and confidence
+                    needed to achieve their career goals. We believe in creating an
+                    ecosystem where talent meets opportunity, and dreams transform into
+                    reality through personalized guidance and industry-aligned training.
+                  </p>
+                </div>
+                
+                <div className="bg-primary-light p-8 rounded-lg shadow-sm">
+                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                    <Eye className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+                  <p className="text-gray-600">
+                    To be the leading platform that transforms education into meaningful careers, 
+                    creating a world where every student has the opportunity to reach their full 
+                    potential. We envision being the bridge that connects academic excellence 
+                    with professional success.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
