@@ -1,4 +1,3 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users2, Target, Trophy, Book } from "lucide-react";
@@ -42,28 +41,19 @@ const About = () => {
         {/* Hero Section */}
         <section className="relative bg-primary-light py-20 overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                  Empowering Careers Through Expert Guidance
-                </h1>
-                <p className="text-lg text-gray-600 mb-8">
-                  At Vedaa Verse, we're dedicated to transforming aspirations into
-                  achievements. Our comprehensive placement preparation program
-                  equips students with the skills and confidence needed to excel in
-                  their careers.
-                </p>
-                <Button className="bg-primary hover:bg-primary/90 text-white">
-                  Join Our Program
-                </Button>
-              </div>
-              <div className="relative">
-                <img
-                  src="/lovable-uploads/9456e6e1-64e1-4f27-b218-6d0ace0921cb.png"
-                  alt="About Vedaa Verse"
-                  className="w-full max-w-md mx-auto rounded-lg shadow-xl"
-                />
-              </div>
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                Empowering Careers Through Expert Guidance
+              </h1>
+              <p className="text-lg text-gray-600 mb-8">
+                At Vedaa Verse, we're dedicated to transforming aspirations into
+                achievements. Our comprehensive placement preparation program
+                equips students with the skills and confidence needed to excel in
+                their careers.
+              </p>
+              <Button className="bg-primary hover:bg-primary/90 text-white">
+                Join Our Program
+              </Button>
             </div>
           </div>
           {/* Background Elements */}
