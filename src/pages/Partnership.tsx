@@ -1,6 +1,6 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { HandshakeIcon, Building2, Users2, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -126,6 +126,7 @@ const Partnership = () => {
           </div>
         </section>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

@@ -1,6 +1,6 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Users2, Target, Trophy, Book, Rocket, Eye } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -151,6 +151,7 @@ const About = () => {
           </div>
         </section>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

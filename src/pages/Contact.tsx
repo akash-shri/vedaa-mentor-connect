@@ -1,6 +1,6 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -125,6 +125,7 @@ const Contact = () => {
           </div>
         </section>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

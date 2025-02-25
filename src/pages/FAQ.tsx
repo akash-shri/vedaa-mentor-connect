@@ -1,6 +1,6 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import {
   Accordion,
   AccordionContent,
@@ -103,6 +103,7 @@ const FAQ = () => {
           </div>
         </section>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

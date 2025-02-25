@@ -1,6 +1,6 @@
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Link } from "react-router-dom";
 import { MessageSquare, Phone, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -81,6 +81,7 @@ const Support = () => {
           </div>
         </section>
       </main>
+      <WhatsAppButton />
       <Footer />
     </div>
   );
