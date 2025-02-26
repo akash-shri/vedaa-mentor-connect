@@ -1,7 +1,8 @@
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Search, User, MessageSquare, CheckCircle, Clock, BookOpen, Users, Send, GraduationCap, Book, Target } from "lucide-react";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import { Search, Users, ChartBar, Award, BookOpen, Clock, UserCheck, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
@@ -18,57 +19,32 @@ const ExploreProgram = () => {
       description: "Balance your studies with our adaptable program timeline",
     },
     {
-      icon: Users,
+      icon: UserCheck,
       title: "Interactive Learning",
       description: "Engage in group discussions and peer learning activities",
     },
     {
-      icon: CheckCircle,
+      icon: Briefcase,
       title: "Practical Approach",
       description: "Real-world scenarios and hands-on practice sessions",
     },
   ];
 
-  const curriculum = [
+  const stats = [
     {
-      week: "Week 1-2",
-      title: "Foundation & Resume Building",
-      topics: [
-        "Understanding job market trends",
-        "Resume optimization workshop",
-        "LinkedIn profile building",
-        "Personal branding",
-      ],
+      icon: Users,
+      number: "500+",
+      label: "Successful Students",
     },
     {
-      week: "Week 3-4",
-      title: "Interview Preparation",
-      topics: [
-        "Common interview questions",
-        "Industry-specific preparation",
-        "Mock interviews with feedback",
-        "Body language and communication",
-      ],
+      icon: ChartBar,
+      number: "95%",
+      label: "Success Rate",
     },
     {
-      week: "Week 5-6",
-      title: "Technical Skills",
-      topics: [
-        "Technical interview preparation",
-        "Problem-solving techniques",
-        "Coding practice sessions",
-        "Project presentation skills",
-      ],
-    },
-    {
-      week: "Week 7-8",
-      title: "Career Development",
-      topics: [
-        "Job search strategies",
-        "Salary negotiation",
-        "Workplace ethics",
-        "Career progression planning",
-      ],
+      icon: Award,
+      number: "50+",
+      label: "Industry Partners",
     },
   ];
 
@@ -79,25 +55,33 @@ const ExploreProgram = () => {
         {/* Hero Section */}
         <section className="relative overflow-hidden pt-24 pb-16">
           <div className="container mx-auto px-4">
-            {/* Hero Content */}
-            <div className="w-full">
-              <div className="mb-6 max-w-2xl">
-                <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
-                  Professional Ready Program
-                </span>
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-[#FF4D8D] text-transparent bg-clip-text">
-                  Placement Ready Program
-                </h1>
-                <p className="text-gray-600 text-lg mb-6">
-                  Accelerate your career with our comprehensive placement preparation program
-                </p>
+            <div className="text-center max-w-3xl mx-auto">
+              <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
+                Professional Ready Program
+              </span>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-[#FF4D8D] text-transparent bg-clip-text">
+                Placement Ready Program
+              </h1>
+              <p className="text-gray-600 text-lg mb-8">
+                Accelerate your career with our comprehensive placement preparation program
+              </p>
+
+              {/* Stats Grid */}
+              <div className="grid grid-cols-3 gap-8 mb-12">
+                {stats.map((stat, index) => (
+                  <div key={index} className="text-center">
+                    <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
+                      <stat.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-gray-900">{stat.number}</h3>
+                    <p className="text-sm text-gray-600">{stat.label}</p>
+                  </div>
+                ))}
               </div>
 
               {/* Search Bar */}
-              <div className="relative mb-8 max-w-2xl">
-                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                  <Search className="h-5 w-5 text-gray-400" />
-                </div>
+              <div className="relative max-w-2xl mx-auto mb-12">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
                 <Input
                   type="text"
                   placeholder="Search for courses, workshops, and more..."
@@ -105,45 +89,18 @@ const ExploreProgram = () => {
                 />
               </div>
 
-              {/* Stats Section */}
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-primary/10">
-                    <GraduationCap className="w-6 h-6 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">500+</h3>
-                  <p className="text-sm text-gray-600">Graduates</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-[#FF4D8D]/10">
-                    <Book className="w-6 h-6 text-[#FF4D8D]" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">50+</h3>
-                  <p className="text-sm text-gray-600">Courses</p>
-                </div>
-                <div className="text-center">
-                  <div className="flex items-center justify-center w-12 h-12 mx-auto mb-3 rounded-full bg-green-100">
-                    <Target className="w-6 h-6 text-green-600" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-gray-900">95%</h3>
-                  <p className="text-sm text-gray-600">Success Rate</p>
-                </div>
-              </div>
-
               {/* Action Buttons */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="flex flex-wrap justify-center gap-4">
                 <Button
-                  className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
+                  className="px-8 py-6 text-lg rounded-xl bg-primary hover:bg-primary/90 text-white"
                 >
-                  <User className="w-5 h-5" />
                   Get Started
                 </Button>
                 <Button
                   variant="outline"
-                  className="flex items-center justify-center gap-2 py-6 text-lg rounded-xl border-2 border-[#FF4D8D] text-[#FF4D8D] hover:bg-[#FF4D8D]/10"
+                  className="px-8 py-6 text-lg rounded-xl border-2 border-[#FF4D8D] text-[#FF4D8D] hover:bg-[#FF4D8D]/10"
                 >
-                  <MessageSquare className="w-5 h-5" />
-                  Testimonials
+                  View Testimonials
                 </Button>
               </div>
             </div>
@@ -151,7 +108,7 @@ const ExploreProgram = () => {
         </section>
 
         {/* Program Features */}
-        <section className="py-16">
+        <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12">
               Program Features
@@ -171,37 +128,85 @@ const ExploreProgram = () => {
           </div>
         </section>
 
-        {/* Curriculum Section */}
+        {/* Mentor Video Section */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Program Curriculum
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Learn from Our Expert Mentor
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              {curriculum.map((module, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="text-primary font-semibold mb-2">
-                    {module.week}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4">{module.title}</h3>
-                  <ul className="space-y-2">
-                    {module.topics.map((topic, topicIndex) => (
-                      <li key={topicIndex} className="flex items-start">
-                        <CheckCircle className="w-5 h-5 text-primary mt-0.5 mr-2" />
-                        <span className="text-gray-600">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
+            <div className="max-w-3xl mx-auto">
+              <div className="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.youtube.com/embed/your-video-id"
+                  title="Mentor Introduction"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Pricing Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Affordable Excellence
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                High-quality placement preparation at an accessible price point
+              </p>
+            </div>
+            <div className="max-w-md mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="bg-primary p-6 text-center">
+                <h3 className="text-2xl font-bold text-white">Complete Program</h3>
+                <div className="mt-4">
+                  <span className="text-5xl font-bold text-white">₹2,000</span>
+                  <span className="text-white opacity-75">/student</span>
                 </div>
-              ))}
+              </div>
+              <div className="p-6">
+                <ul className="space-y-4">
+                  {[
+                    "10-12 Live Sessions",
+                    "3 Mock Interviews",
+                    "Resume Building",
+                    "LinkedIn Profile Optimization",
+                    "Interview Preparation",
+                    "Placement Support",
+                    "Access to Recorded Content",
+                    "Certificate of Completion",
+                  ].map((feature, index) => (
+                    <li key={index} className="flex items-start">
+                      <svg
+                        className="w-5 h-5 text-primary mt-0.5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                      <span className="ml-3 text-gray-600">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button className="w-full mt-8 bg-primary hover:bg-primary/90">
+                  Enroll Now
+                </Button>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
