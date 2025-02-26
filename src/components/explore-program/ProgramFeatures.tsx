@@ -37,7 +37,7 @@ export const ProgramFeatures = () => {
               key={index}
               className="p-6 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
             >
-              <feature.icon className="w-16 h-16 text-primary mb-4" /> {/* Increased from w-12 h-12 to w-16 h-16 */}
+              <feature.icon className="w-16 h-16 text-primary mb-4" />
               <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
               <p className="text-gray-600">{feature.description}</p>
             </div>
